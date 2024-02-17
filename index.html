@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">     
     <!--Custom Colors-->
     <script>
         tailwind.config = {
@@ -15,6 +18,12 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary': '#1DD100',
+                'btn-grad': 'rgba(29, 209, 0, 0.15)',
+                'offer-bg1': '#FFBF0F',
+                'offer-bg2': '#F78C9C',
+                'txt':'#030712',
+                'txt-small':'rgba(3, 7, 18, 0.60)',
               }
             }
           }
@@ -23,12 +32,44 @@
     <!-- Custom CSS -->
     <style>
       body{
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        color: #030712;
       }
     </style>
 </head>
-<body>
+<body class="bg-white">
     <header>
+        <nav class="w-[92%] lg:w-4/5 mx-auto py-11">
+            <div class="navbar bg-white">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-bold">E-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-normal text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-btn-grad border-primary text-lg font-semibold w-32 text-primary">Bus
+                    <img src="images/bus-icon.png" alt="Bus">
+                  </a>
+                </div>
+              </div>
+        </nav>
     </header>
 
     <main>
