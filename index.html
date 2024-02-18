@@ -194,9 +194,49 @@
             <p class="text-txt-small">One Route at a Time.</p>
           </div>
           <!--Part2-->
-          <div class="w-[92%] lg:w-4/5 mx-auto mt-12 rounded-xl bg-white flex flex-row justify-between">
+          <div class="w-[92%] lg:w-4/5 mx-auto mt-12 rounded-xl bg-white flex flex-row justify-around md:justify-between">
             <!--Left Side-->
-            <div class="w-[74%]">
+            <div class="w-[60%] md:w-[74%] p-8">
+              <!--First Row-->
+              <div class="flex flex-col md:flex-row md:justify-between items-center">
+                <!--Name-->
+                <div class="flex flex-row justify-between items-center gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="73" height="52" viewBox="0 0 73 52" fill="none">
+                    <path d="M8.85714 42.9522C8.85714 44.7708 9.57959 46.515 10.8656 47.8009C12.1515 49.0869 13.8957 49.8093 15.7143 49.8093C17.5329 49.8093 19.2771 49.0869 20.563 47.8009C21.849 46.515 22.5714 44.7708 22.5714 42.9522M8.85714 42.9522C8.85714 41.1336 9.57959 39.3894 10.8656 38.1035C12.1515 36.8175 13.8957 36.095 15.7143 36.095C17.5329 36.095 19.2771 36.8175 20.563 38.1035C21.849 39.3894 22.5714 41.1336 22.5714 42.9522M8.85714 42.9522H2V5.2379C2 4.32858 2.36122 3.45651 3.00421 2.81353C3.64719 2.17055 4.51926 1.80933 5.42857 1.80933H53.4286C57.9751 1.80933 62.3355 4.33789 65.5504 8.83876C68.7653 13.3396 70.5714 19.4441 70.5714 25.8093M22.5714 42.9522H50M50 42.9522C50 44.7708 50.7224 46.515 52.0084 47.8009C53.2944 49.0869 55.0385 49.8093 56.8571 49.8093C58.6758 49.8093 60.4199 49.0869 61.7059 47.8009C62.9918 46.515 63.7143 44.7708 63.7143 42.9522M50 42.9522C50 41.1336 50.7224 39.3894 52.0084 38.1035C53.2944 36.8175 55.0385 36.095 56.8571 36.095C58.6758 36.095 60.4199 36.8175 61.7059 38.1035C62.9918 39.3894 63.7143 41.1336 63.7143 42.9522M63.7143 42.9522H70.5714V25.8093M70.5714 25.8093H55.1429L50 1.80933M2 18.9522H53.4286M19.1429 1.80933V18.9522M36.2857 1.80933V18.9522" stroke="#030712" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div>
+                    <h3 class="text-txt text-[2rem] font-semibold">E-Paribahan</h3>
+                    <p class="text-txt-small text-lg font-inter font-normal">Coach-009-WEB | AC Business</p>
+                  </div>
+                </div>
+<!--------------------------------------------------------------------->
+                <!--Dynamic Seat Count-->
+                <button class="p-4 bg-btn-grad  font-inter text-lg font-normal text-primary flex flex-row gap-2 rounded-2xl">
+                  <img src="images/seat-green.png" alt="Bus">
+                  <div><span>40</span> Seats Left</div>
+                </button>
+<!--------------------------------------------------------------------->
+              </div>
+              <!--Rest-->
+              <div class="bg-[#F7F8F8] rounded-2xl mt-6">
+                <!--R1-->
+                <div class="flex w-[90%] mx-auto flex-row justify-between border-b-2 border-dashed py-8">
+                  <p class="text-txt-small text-lg font-medium">Route</p>
+                  <h3 class="text-lg font-medium text-txt">Dhaka - Sylhet</h3>
+                </div>
+                <!--R2-->
+                <div class="flex w-[90%] mx-auto flex-row justify-between border-b-2 border-dashed py-8">
+                  <p class="text-txt-small text-lg font-medium">Departure Time</p>
+                  <h3 class="text-lg font-medium text-txt">9.00 PM</h3>
+                </div>
+                <!--R3-->
+                <div class="flex flex-col lg:flex-row justify-center gap-4 py-6">
+                  <button class="btn text-base text-txt-small2 font-inter font-normal bg-[#0307120D] border-none hover:bg-btn-grad">Boarding Point - Saydabad</button>
+                  <button class="btn text-base text-txt-small2 font-inter font-normal bg-[#0307120D] border-none hover:bg-btn-grad">Dropping Point - Shylet</button>
+                  <button class="btn text-base text-txt-small2 font-inter font-normal bg-[#0307120D] border-none hover:bg-btn-grad">Est. Time - 8 Hour</button>
+                </div>
+
+              </div>
             </div>
             <!--Right Side-->
             <div class="w-[26%] flex flex-row justify-between items-center">
@@ -208,8 +248,223 @@
               </div>
             </div>
           </div>
-          <!--Part3-->
-          <div class="w-[92%] lg:w-4/5 mx-auto mt-6 rounded-xl h-10 bg-white">
+
+
+          <!--Part3(Bus Seats)-->
+          <div class="w-[92%] lg:w-4/5 mx-auto mt-6 rounded-xl bg-white p-8 flex flex-col md:flex-row">
+            <!--Left Part-->
+            <!--Select Your Seat & Signs-->
+            <div class="w-full md:w-[62%] md:pr-8">
+              <h3 class="text-txt text-2xl font-medium pb-6 border-b-2 border-[#03071233] border-dashed">Select Your Seat</h3>
+              <div class="flex flex-row justify-between py-6 border-b-2 border-[#03071233] border-dashed">
+                <div class="flex flex-row justify-between gap-2">
+                  <img src="images/seat-gray.png" alt="Seat">
+                  <p class="text-txt-small3 text-lg font-normal">Available</p>
+                </div>
+
+                <div class="flex flex-row justify-between gap-2">
+                  <img src="images/seat-green-filled.png" alt="Seat">
+                  <p class="text-txt-small3 text-lg font-normal">Selected</p>
+                </div>
+              </div>
+
+
+              <!--Dynamic Seating-->
+            <div>
+              <div class="grid grid-cols-12 grid-rows-11 gap-0 mt-6">
+                <!--Sterring Wheel-->
+                <div class="col-span-12 flex justify-end">
+                  <div class="w-28 h-14 flex flex-row justify-center items-center rounded-2xl bg-[#0307121A]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <path d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333" stroke="#030712" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <!--Seat Name Indicator-->
+                <div class="row-span-10 row-start-2 mt-6">
+                  <p class="text-txt-small3 txt-lg font-normal">A</p>
+                  <p class="text-txt-small3 txt-lg font-normal">B</p>
+                  <p class="text-txt-small3 txt-lg font-normal">C</p>
+                  <p class="text-txt-small3 txt-lg font-normal">D</p>
+                  <p class="text-txt-small3 txt-lg font-normal">E</p>
+                  <p class="text-txt-small3 txt-lg font-normal">F</p>
+                  <p class="text-txt-small3 txt-lg font-normal">G</p>
+                  <p class="text-txt-small3 txt-lg font-normal">H</p>
+                  <p class="text-txt-small3 txt-lg font-normal">I</p>
+                  <p class="text-txt-small3 txt-lg font-normal">J</p>
+                </div>
+
+
+                <div class="col-span-11 row-span-10 row-start-2 mt-6">
+                  <div class="col-span-12 flex justify-end">
+                    <div class="grid grid-cols-5 gap-y-6 gap-x-5 w-full">
+                      <!--A row-->
+                      <button id="A1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">A1
+                      </button>
+
+                      <button id="A2" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">A2
+                      </button>
+
+                      <div class=""></div>
+
+                      <button id="A3" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">A3
+                      </button>
+
+                      <button id="A4" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">A4
+                      </button>
+                      
+                      <!--B row-->
+                      <button id="B1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">B1
+                      </button>
+
+                      <button id="B2" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">B2
+                      </button>
+
+                      <div class=""></div>
+
+                      <button id="B3" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">B3
+                      </button>
+
+                      <button id="B4" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">B4
+                      </button>
+
+                      <!--C row-->
+                      <button id="C1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">C1
+                      </button>
+
+                      <button id="C2" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">C2
+                      </button>
+
+                      <div class=""></div>
+
+                      <button id="C3" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">C3
+                      </button>
+
+                      <button id="C4" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">C4
+                      </button>
+
+                      <!--D row-->
+                      <button id="D1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">D1
+                      </button>
+
+                      <button id="D2" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">D2
+                      </button>
+
+                      <div class=""></div>
+
+                      <button id="D3" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">D3
+                      </button>
+
+                      <button id="D4" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">D4
+                      </button>
+
+                      <!--E row-->
+                      <button id="E1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">E1
+                      </button>
+
+                      <button id="E2" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">E2
+                      </button>
+
+                      <div class=""></div>
+
+                      <button id="E3" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">E3
+                      </button>
+
+                      <button id="E4" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">E4
+                      </button>
+
+                      <!--F row-->
+                      <button id="F1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">F1
+                      </button>
+
+                      <button id="F2" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">F2
+                      </button>
+
+                      <div class=""></div>
+
+                      <button id="F3" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">F3
+                      </button>
+
+                      <button id="F4" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">F4
+                      </button>
+
+                      <!--G row-->
+                      <button id="G1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">G1
+                      </button>
+
+                      <button id="G2" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">G2
+                      </button>
+
+                      <div class=""></div>
+
+                      <button id="G3" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">G3
+                      </button>
+
+                      <button id="G4" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">G4
+                      </button>
+
+                      <!--H row-->
+                      <button id="H1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">H1
+                      </button>
+
+                      <button id="H2" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">H2
+                      </button>
+
+                      <div class=""></div>
+
+                      <button id="H3" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">H3
+                      </button>
+
+                      <button id="H4" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">H4
+                      </button>
+
+                      <!--I row-->
+                      <button id="I1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">I1
+                      </button>
+
+                      <button id="I2" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">I2
+                      </button>
+
+                      <div class=""></div>
+
+                      <button id="I3" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">I3
+                      </button>
+
+                      <button id="I4" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">I4
+                      </button>
+
+                      <!--J row-->
+                      <button id="J1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">J1
+                      </button>
+
+                      <button id="J2" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">J2
+                      </button>
+
+                      <div class=""></div>
+
+                      <button id="J3" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">J3
+                      </button>
+
+                      <button id="J4" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">J4
+                      </button>
+
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+            
+
+
+
+
+
+
+            <!--Right Part-->
+            <div class="w-full md:w-[38%] h-40 bg-red-500"></div>
           </div>
         </section>
 
@@ -254,7 +509,7 @@
             <div class="hover:text-primary">
               <button class="" onclick="my_modal_1.showModal()">Terms and Conditions</button>
               <dialog id="my_modal_1" class="modal">
-                  <div class="modal-box">
+                  <div class="modal-box bg-white">
                       <!--Text-->
                       <div class="p-8 text-black">
                           <h1 class="text-3xl font-bold mb-4">Terms and Conditions</h1>
@@ -295,7 +550,7 @@
             <div class="hover:text-primary">
               <button class="" onclick="my_modal_2.showModal()">Return & Refund Policy</button>
               <dialog id="my_modal_2" class="modal">
-                  <div class="modal-box">
+                  <div class="modal-box bg-white">
                       <!--Text-->
                       <div class="p-8 text-black">
                           <h1 class="text-3xl font-bold mb-4">Return & Refund Policy</h1>
@@ -335,7 +590,7 @@
             <div class="hover:text-primary">
               <button class="" onclick="my_modal_3.showModal()">Privacy Policy</button>
               <dialog id="my_modal_3" class="modal">
-                <div class="modal-box">
+                <div class="modal-box bg-white">
                   <!--Text-->
                   <div class="p-8 text-black">
                     <h1 class="text-3xl font-bold mb-4">Privacy Policy</h1>
