@@ -24,6 +24,9 @@
                 'offer-bg2': '#F78C9C',
                 'txt':'#030712',
                 'txt-small':'rgba(3, 7, 18, 0.60)',
+                'txt-small2':'rgba(3, 7, 18, 0.80)',
+                'txt-small3':'rgba(3, 7, 18, 0.50)',
+                'txt-small4':'rgba(3, 7, 18, 0.40)',
               }
             }
           }
@@ -85,7 +88,8 @@
                       <h1 class="text-4xl md:text-6xl font-bold text-white">End-to-End Travel with</h1>
                       <h1 class="text-4xl md:text-6xl font-bold text-primary py-6">P Paribahan</h1>
                       <p class="text-sm md:text-lg font-light text-white font-inter mb-7 md:mb-10">Explore our vast network of routes, choose your seats, experience comfort, reliability, and affordability with E-Ticket.</p>
-                      <a href='#' class=" rounded-xl hover:bg-white hover:text-primary border-none bg-primary px-7 py-5 text-txt text-xl font-semibold">Buy Tickets</a>
+                      <!--Hero Button-->
+                      <a href='#ticket-section' class=" rounded-xl hover:bg-white hover:text-primary border-none bg-primary px-7 py-5 text-txt text-xl font-semibold">Buy Tickets</a>
                   </div>
             </div>
 
@@ -122,9 +126,59 @@
         </section>
 
         <!--Offer Section-->
+        <section class="w-[92%] lg:w-4/5 mx-auto mt-32 text-center">
+          <!--Offer Heading-->
+          <h1 class="text-[2.5rem] font-bold">Best offers for you</h1>
+          <!--Offer-->
+          <div class="flex justify-between items-center flex-col lg:flex-row mt-12">
+              <!--offer1-->
+              <div class="w-full lg:w-[49%] min-h-52 bg-offer-bg1 rounded-3xl flex flex-row justify-between">
+                <!--leftside-->
+                <div class="w-[55%] flex flex-col justify-center items-start pl-12 font-inter">
+                  <h2 class="text-[2.5rem] font-extrabold text-txt-small2">15% OFF</h3>
+                  <h4 class="text-xl font-medium text-txt-small2">on your next purchase</h3>
+                  <p class="text-xl font-normal text-txt-small mt-2">use by Januray 2024</p>
+                </div>
+                <!--rightside-->
+                <div class="w-[45%] flex flex-row justify-between">
+                  <img src="images/cupon-devider.png" alt="">
+                  <div class="flex flex-col justify-center pr-12">
+                    <h3 class="text-[2rem] font-bold text-txt">NEW15</h3>
+                    <p class="text-xl font-normal text-txt-small4">Coupon Code</p>
+                  </div>
+
+                </div>
+              </div>
+              
+              <!--offer2-->
+              <div class="w-full lg:w-[49%] min-h-52 bg-offer-bg2 rounded-3xl flex flex-row justify-between">
+                <!--leftside-->
+                <div class="w-[55%] flex flex-col justify-center items-start pl-12 font-inter">
+                  <h2 class="text-[2.5rem] font-extrabold text-txt-small2">20% OFF</h3>
+                  <h4 class="text-xl font-medium text-txt-small2">on your next purchase</h3>
+                  <p class="text-xl font-normal text-txt-small3 mt-2">use by Januray 2024</p>
+                </div>
+                <!--rightside-->
+                <div class="w-[45%] flex flex-row justify-between">
+                  <img src="images/cupon-devider.png" alt="">
+                  <div class="flex flex-col justify-center pr-12">
+                    <h3 class="text-[2rem] font-bold text-txt">Couple20</h3>
+                    <p class="text-xl font-normal text-txt-small4">Coupon Code</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!--Offter Button-->
+          <button class=" rounded-xl hover:bg-primary hover:text-white text-primary border-2 border-primary px-9 py-5 text-xl font-semibold mt-16">See All Offers</button>
+        </section>
+
+        <!--Ticketing Section-->
+        <section id="ticket-section" class="bg-[#F7F8F8] border-t-2 border-primary h-96 w-full mt-32 rounded-[88px]">
+        </section>
     </main>
 
-    <footer>
+    <footer class=""> 
+      
     </footer>
 
     <!--JS Files-->
