@@ -199,7 +199,7 @@
                 </div>
 <!--------------------------------------------------------------------->
                 <!--Dynamic Seat Count-->
-                <button class="p-4 bg-btn-grad  font-inter text-lg font-normal text-primary flex flex-row gap-2 rounded-2xl">
+                <button id="seat-count" class="p-4 bg-btn-grad  font-inter text-lg font-normal text-primary flex flex-row gap-2 rounded-2xl">
                   <img src="images/seat-green.png" alt="Bus">
                   <div><span>40</span> Seats Left</div>
                 </button>
@@ -287,7 +287,7 @@
                 <!--Seats-->
                   <div class="col-span-11 row-span-10 row-start-2 mt-6">
                     <div class="col-span-12 flex justify-end">
-                      <div class="grid grid-cols-5 gap-y-6 gap-x-5 w-full">
+                      <div id="seat-container" class="grid grid-cols-5 gap-y-6 gap-x-5 w-full">
                       <!--A row-->
                       <button id="A1" class="bus-seat h-14 flex flex-row justify-center items-center rounded-2xl bg-[#F7F8F8] font-inter hover:bg-[#0307121A]">A1
                       </button>
@@ -456,55 +456,47 @@
                   <div class="flex flex-row gap-2">
                     <h3 class="text-txt text-base font-normal font-inter">Seat</h3>
                     <!--Dynamic No of Seats-->
-                    <span class="rounded-xl bg-primary px-3 text-white">0</span>
+                    <span id="total-selected" class="rounded-xl bg-primary px-3 text-white">0</span>
                   </div>
                   <h3 class="text-txt text-base font-normal font-inter">Class</h3>
                   <h3 class="text-txt text-base font-normal font-inter pl-12">Price</h3>
                 </div>
 
                 <!--data-->
-                <div class="space-y-4 py-4 border-b-[1px] border-[#03071233]">
-                  <div class="flex flex-row justify-between">
-                    <p class="font-inter text-base text-txt-small3 font-light">C2</p>
-                    <p class="font-inter text-base text-txt-small3 font-light">Economy</p>
-                    <p class="font-inter text-base text-txt-small3 font-light">500</p>
-                  </div>
-                  <div class="flex flex-row justify-between">
-                    <p class="font-inter text-base text-txt-small3 font-light">C4</p>
-                    <p class="font-inter text-base text-txt-small3 font-light">Economy</p>
-                    <p class="font-inter text-base text-txt-small3 font-light">500</p>
-                  </div>
+                <div id= "ticket-data" class="space-y-4 py-4 border-b-[1px] border-[#03071233]">
                 </div>
 
                 <!--Total Price-->
                 <div class="flex flex-row justify-between pt-2">
                   <h3 class="text-txt text-base font-normal font-inter">Total Price</h3>
-                  <h3 class="text-txt text-base font-normal font-inter">1000</h3>
+                  <h3 id="total-price" class="text-txt text-base font-normal font-inter">0</h3>
                 </div>
 
+                <div id="discount-info" class="text-red-500"></div>
+
                 <!--Coupon Section-->
-                <div class="flex flex-row justify-between pt-4">
-                  <input type="text" class="w-[69%] h-12 rounded-xl bg-white pl-4" placeholder="Have any coupon?">
-                  <button class="w-[30%] h-12 rounded-xl bg-primary text-white font-inter font-normal text-base">Apply</button>
+                <div id="coupon-section" class="flex flex-row justify-between pt-4">
+                  <input id="coupon-input" type="text" class="w-[69%] h-12 rounded-xl bg-white pl-4" placeholder="Have any coupon?" disabled>
+                  <button id="apply-btn" class="w-[30%] h-12 rounded-xl bg-slate-600 text-white font-inter font-normal text-base"  disabled>Apply</button>
                 </div>
 
                 <!--Grand Total-->
                 <div class="flex flex-row justify-between pt-4">
                   <h3 class="text-txt text-base font-normal font-inter">Grand Total</h3>
-                  <h3 class="text-txt text-base font-normal font-inter">1000</h3>
+                  <h3 id="grand-total" class="text-txt text-base font-normal font-inter">0</h3>
                 </div>
               </div>
 
               <!--Form-->
               <form>
                 <div class="flex flex-col">
-                  <h3 class="font-inter text-base font-medium mt-6">Passenger Name*</h3>
+                  <h3 class="font-inter text-base font-medium mt-6">Passenger Name</h3>
                   <input type="text" class="w-full h-16 rounded-xl border-2 mt-4 bg-white pl-4" placeholder="Enter Your Name">
                   <h3 class="font-inter text-base font-medium mt-6">Phone Number*</h3>
-                  <input type="text" class="w-full h-16 rounded-xl border-2 mt-4 bg-white pl-4" placeholder="Enter Your Phone Number">
+                  <input type="text" class="w-full h-16 rounded-xl border-2 mt-4 bg-white pl-4" placeholder="Enter Your Phone Number" required>
                   <h3 class="font-inter text-base font-medium mt-6">Email ID</h3>
                   <input type="email" class="w-full h-16 rounded-xl border-2 mt-4 bg-white pl-4" placeholder="Enter Your Email">
-                  <button class="w-full h-16 rounded-xl bg-primary text-white font-inter font-semibold text-lg mt-8">Next</button>
+                  <button id="submit-btn" class="w-full h-16 rounded-xl bg-primary text-white font-inter font-semibold text-lg mt-8 disabled:bg-slate-600" disabled>Next</button>
                 </div>
               </form>
 
@@ -686,7 +678,7 @@
 
 
     <!--JS Files-->
-    <script src="js/script.js"></script>
+    <script src="js/utility.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
